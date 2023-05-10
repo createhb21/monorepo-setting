@@ -23,7 +23,7 @@ export default function Home() {
             <code className={styles.code}>{sayHello()}</code>
           </p>
 
-          <Button>Hello from @wanted/ui</Button>
+          <Button variant="contained">Hello from @wanted/ui</Button>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
