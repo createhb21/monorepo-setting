@@ -238,6 +238,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.1.2":
+  version: 20.1.2
+  resolution: "@types/node@npm:20.1.2"
+  checksum: 9bb2cf0a846e60cc06c44a5622c1998d8373c8675b24d11c86845a29f32c60f5bca9627f2a2535640f902be3dbcc60f126a895abe8e10f12e1467ae3deaba56d
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.5
   resolution: "@types/prop-types@npm:15.7.5"
@@ -245,7 +252,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.4":
+"@types/react-dom@npm:18.2.4, @types/react-dom@npm:^18.2.4":
   version: 18.2.4
   resolution: "@types/react-dom@npm:18.2.4"
   dependencies:
@@ -254,7 +261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.6":
+"@types/react@npm:*, @types/react@npm:18.2.6, @types/react@npm:^18.2.6":
   version: 18.2.6
   resolution: "@types/react@npm:18.2.6"
   dependencies:
@@ -462,10 +469,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@wanted/admin@workspace:apps/admin":
+  version: 0.0.0-use.local
+  resolution: "@wanted/admin@workspace:apps/admin"
+  dependencies:
+    "@types/node": 20.1.0
+    "@types/react": 18.2.6
+    "@types/react-dom": 18.2.4
+    "@wanted/lib": "workspace:^"
+    eslint: 8.40.0
+    eslint-config-next: 13.4.1
+    next: 13.4.1
+    react: 18.2.0
+    react-dom: 18.2.0
+    typescript: 5.0.4
+  languageName: unknown
+  linkType: soft
+
 "@wanted/lib@workspace:^, @wanted/lib@workspace:packages/lib":
   version: 0.0.0-use.local
   resolution: "@wanted/lib@workspace:packages/lib"
   dependencies:
+    typescript: ^5.0.4
+  languageName: unknown
+  linkType: soft
+
+"@wanted/ui@workspace:^, @wanted/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@wanted/ui@workspace:packages/ui"
+  dependencies:
+    "@types/node": ^20.1.2
+    "@types/react": ^18.2.6
+    "@types/react-dom": ^18.2.4
+    react: ^18.2.0
+    react-dom: ^18.2.0
     typescript: ^5.0.4
   languageName: unknown
   linkType: soft
@@ -478,6 +515,7 @@ __metadata:
     "@types/react": 18.2.6
     "@types/react-dom": 18.2.4
     "@wanted/lib": "workspace:^"
+    "@wanted/ui": "workspace:^"
     eslint: 8.40.0
     eslint-config-next: 13.4.1
     next: 13.4.1
@@ -2601,7 +2639,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
+"react-dom@npm:18.2.0, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -2620,7 +2658,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:18.2.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
