@@ -1,5 +1,5 @@
 {
-  "name": "@wanted/lib",
+  "name": "@ahhachul/lib",
   "packageManager": "yarn@3.5.1",
   "main": "./src/index.ts",
   "scripts": {
