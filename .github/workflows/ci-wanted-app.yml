@@ -5,7 +5,7 @@ on:
     branches:
       - 6-deploy-github-actions
     paths:
-      - 'apps/wanted/**'
+      - 'apps/web/**'
 
 jobs:
   test:
@@ -25,6 +25,6 @@ jobs:
         uses: ./.github/actions/yarn-install
 
       - name: Build web-app
-        working-directory: apps/wanted
+        working-directory: apps/web
         run: |
           yarn build
